@@ -6,6 +6,7 @@ import TaskContext from '../../context/taskContext';
 function ItemAdd() {
   const [description, setDescription] = useState("");
   const { addTask } = useContext(TaskContext);
+
   const handleAdd = async () => addTask(description);
 
   return (
